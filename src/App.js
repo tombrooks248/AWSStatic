@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const marker = L.marker([51.5, -0.09]).addTo(mymap);
-
+  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
   const foo = "barrrr barrr baramm";
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +12,7 @@ function App() {
         <p>
           This is a practice website, just checking stuff out. 
         </p>
-        <div id="mapid"></div>
+        <div id="mapid">{mymap}</div>
         <h1>{foo}</h1>
         <a
           className="App-link"
