@@ -12,7 +12,7 @@ function App() {
         <p>
           This is a practice website, just checking stuff out. 
         </p>
-        <div id="mapid">{mymap}</div>
+        <div id="mapid">{mymap} is this div really here?</div>
         <h1>{foo} Anyhing in here?</h1>
         <a
           className="App-link"
