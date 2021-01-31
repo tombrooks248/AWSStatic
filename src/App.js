@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+  const mymap = L.map('mapid').setView([51.505, -0.09], 13);
   const foo = "barrrr barrr baramm";
 
   return (
@@ -13,7 +13,7 @@ function App() {
           This is a practice website, just checking stuff out. 
         </p>
         <div id="mapid">{mymap}</div>
-        <h1>{foo}</h1>
+        <h1>{foo} Anyhing in here?</h1>
         <a
           className="App-link"
           href="https://www.google.com"
