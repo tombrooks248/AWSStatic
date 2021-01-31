@@ -10,17 +10,13 @@ function App() {
           This is a practice website, just checking stuff out. 
         </p>
 
-        <h1> shouting </h1>
-        <p> its sunday</p>
-
-
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          THIS is TOM's website now !!!!! MuHahahahaha
+          This orange bit is inside the app, and is also a link to google. 
         </a>
       </header>
     </div>
