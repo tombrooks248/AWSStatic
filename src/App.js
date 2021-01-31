@@ -3,6 +3,8 @@ import './App.css';
 
 function App() {
   const marker = L.marker([51.5, -0.09]).addTo(mymap);
+
+  const foo = "barrrr barrr baramm";
   return (
     <div className="App">
       <header className="App-header">
@@ -11,7 +13,7 @@ function App() {
           This is a practice website, just checking stuff out. 
         </p>
         <div id="mapid"></div>
-
+        <h1>{foo}</h1>
         <a
           className="App-link"
           href="https://www.google.com"
