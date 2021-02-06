@@ -34,11 +34,14 @@
     <title>Common Ground</title>
   </head>
   <body>
+   
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <p> This will be above the header</p>
     <div id="root"></div>
 
-    <div id="mapid"></div>
-    <p> just trying to understand how React apps work</p>
+    <script>  
+      const mymap = L.map('mapid').setView([51.505, -0.09], 13);
+      </script> 
   </body>
 </html>

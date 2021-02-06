@@ -1,30 +1,34 @@
-import logo from './logo.svg';
+
+import React, { Component } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import L from 'leaflet';
 import './App.css';
 
-function App() {
-  const mymap = L.map('mapid').setView([51.505, -0.09], 13);
-  const foo = "barrrr barrr baramm";
+class App extends Component {
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is a practice website, just checking stuff out. 
-        </p>
-        <div id="mapid">{mymap} is this div really here?</div>
-        <h1>{foo} Anyhing in here?</h1>
-        <a
-          className="App-link"
-          href="https://www.google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This orange bit is inside the app, and is also a link to google. 
-        </a>
-      </header>
-    </div>
-  );
+  render(){
+    return (
+         
+          <MapContainer id="mapid" 
+            center={[0,0.5]} 
+            zoom={1} 
+            scrollWheelZoom={false} 
+            minZoom={1}
+            maxZoom={2}
+              >
+            <TileLayer attribution = "This map is offline"
+              url="/KelmarshPhoto.png"
+              tileSize={800}
+              noWrap = {true}
+              />
+            <Marker position={[51.505, -0.09]}>
+              <Popup>
+                A pretty CSS3 popup. <br /> Easily customizable.
+              </Popup>
+            </Marker>
+          </MapContainer>
+    );
+  }
 }
 
 export default App;
